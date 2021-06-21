@@ -1,0 +1,7 @@
+[user]
+	name = Gabriel Kraft
+	email = gabriel.kraft@gmail.com
+[url "https://"]
+	insteadOf = git://
+[init]
+	defaultBranch = main
