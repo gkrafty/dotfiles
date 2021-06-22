@@ -59,10 +59,8 @@ fi
 if [ "$color_prompt" = yes ]; then
 #   PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
     PS1='\n'"\e[0;32m@\h/\e[m\e[0;34m\W\e[m"$'\n'"\u $ "
-#   PS1='\n'"@\h/\W"$'\n'"\u $ "
 else
 #    PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
-#    PS1='\n'"@\h/\W"$'\n'"\u $ "
     PS1='\n'"\e[0;32m@\h/\e[m\e[0;34m\W\e[m"$'\n'"\u $ "
 fi
 unset color_prompt force_color_prompt
@@ -95,6 +93,7 @@ fi
 #alias ll='ls -l'
 #alias la='ls -A'
 #alias l='ls -CF'
+alias ll='ls -lah'
 
 # Alias definitions.
 # You may want to put all your additions into a separate file like
