@@ -49,6 +49,9 @@ else
     echo "Unknown architecture: ${arch_name}"
 fi
 
+# zsh aliases
+alias ll='ls -lah'
+
 # Git aliases.
 alias gs='git status'
 alias gc='git commit'
