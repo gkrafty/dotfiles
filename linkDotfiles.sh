@@ -14,12 +14,12 @@ ln -s ~/dotfiles/.inputrc ~/.inputrc
 # quickly link gitfiles to personal gitfiles
 FILE=~/.gitconfig
 if test -f "$FILE"; then
-  mv ~/.gitconfig ~/.gitconfig
-  ls -s ~/dotfiles/.gitconfig ~/.gitconfig
+  mv ~/.gitconfig ~/.gitconfig.bak
 fi
+ln -s ~/dotfiles/.gitconfig ~/.gitconfig
 
-FILE=~/.gitignore
+  FILE=~/.gitignore
 if test -f "$FILE"; then
   mv ~/.gitignore ~/.gitignore.bak
-  ls -s ~/dotfiles/.gitignore ~/.gitignore
 fi
+ln -s ~/dotfiles/.gitignore ~/.gitignore
