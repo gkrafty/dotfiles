@@ -7,6 +7,9 @@ case $- in
       *) return;;
 esac
 
+# Message of the day
+~/.motd/motd.sh
+
 # don't put duplicate lines or lines starting with space in the history.
 # See bash(1) for more options
 HISTCONTROL=ignoreboth
@@ -58,10 +61,10 @@ fi
 
 if [ "$color_prompt" = yes ]; then
 #   PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
-    PS1='\n'"\e[0;32m@\h/\e[m\e[0;34m\W\e[m"$'\n'"\u $ "
+    PS1='\n'"\e[0;32m@\h/\e[m\e[0;34m\w\e[m"$'\n'"\u $ "
 else
 #    PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
-    PS1='\n'"\e[0;32m@\h/\e[m\e[0;34m\W\e[m"$'\n'"\u $ "
+    PS1='\n'"\e[0;32m@\h/\e[m\e[0;34m\w\e[m"$'\n'"\u $ "
 fi
 unset color_prompt force_color_prompt
 
