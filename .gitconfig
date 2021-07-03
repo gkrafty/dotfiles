@@ -19,7 +19,9 @@
 [web]
   browser = google-chrome
 [credential]
-  helper = osxkeychain
+#  helper = osxkeychain
+#  helper = "/usr/share/doc/git/contrib/credential/libsecret/git-credential-libsecret"
+#  helper = store
 [push]
   default = simple
 [merge]
