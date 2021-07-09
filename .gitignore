@@ -2,3 +2,5 @@
 *.LSOverride
 Thumbs.db
 .bundle
+secrets.yaml
+secrets.txt
