@@ -165,6 +165,9 @@ chflags nohidden ~/Library
 # Dock, Dashboard, and hot corners                                            #
 ###############################################################################
 
+# Disable recent applications from showing
+defaults write com.apple.dock show-recents -bool false
+
 # Set the icon size of Dock items
 #defaults write com.apple.dock tilesize -int 30
 
