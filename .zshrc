@@ -51,6 +51,10 @@ fi
 
 # zsh aliases
 alias ll='ls -lah'
+alias watch5='while :; do clear; ps aux -c | head -6; sleep 1; done'
+alias top5='ps aux -c | head -6'
+alias wifioff='networksetup -setairportpower en0 off'
+alias wifion='networksetup -setairportpower en0 on'
 
 # Git aliases.
 alias gs='git status'
