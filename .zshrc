@@ -15,7 +15,7 @@ unsetopt nomatch
 # Nicer prompt.
 # export PS1=$'\n'"%F{green} %*%F %3~ %F{white}"$'\n'"$ "
 # export PS1=$'\n'"@%m %~ "$'\n'%n" $ "
-export PS1=$'\n'"%F{green}@%m:%F{blue}%~ "$'\n'%F{green}%n" $ "
+export PS1=$'\n'"%F{green}@%m:%F{blue}%~ "$'\n'%F{green}%n" $ %F{reset}"
 
 ~/.motd/motd.sh
 
