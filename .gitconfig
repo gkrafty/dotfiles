@@ -1,6 +1,7 @@
 [user]
   name = gkrafty
   email = gabriel.kraft@gmail.com
+  #signingkey = xxxx
 [url "https://"]
   insteadOf = git://
 [init]
@@ -29,12 +30,41 @@
 [difftool]
   prompt = false
 [alias]
-  c = commit
-  ca = commit -a
-  cm = commit -m
-  cam = commit -am
-  d = diff
-  dc = diff --cached
+  # branching
+  b = branch -v                           # branch (verbose)
+
+  # commiting
+  c = commit                              # commit
+  ca = commit -a                          # commit all
+  cm = commit -m                          # commit with message
+  cam = commit -am                        # commit all with message
+
+  # diffing
+  d = diff                                # diff unstaged changes
+  dc = diff --cached                      # diff staged changes
+
+  # checking out
+  co = checkout                           # checkout
+  nb = checkout -b                        # create and switch to new branch
+
+  # logging
   l = log --graph --pretty=format:"%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset" --abbrev-commit
+
+  # rebasing
+  rc = rebase --continue                   # continue rebase
+  rs = rebase --skip                       # skip rebase
+
+  # statusing
+  s = status                               # status
+  st = status                              # status
+  stat = status                            # status
 [pull]
-  rebase = true
+  rebase = truea
+[commit]
+  # gpgsign = true
+[branch]
+  automerge = true
+[push]
+  # 'git push' will push the current branch to its tracking branch
+  # the usual default is to push all branches
+  default = matching

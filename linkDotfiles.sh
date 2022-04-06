@@ -15,6 +15,13 @@ if test -f "$FILE"; then
 fi
 ln -s ~/dotfiles/.zshrc ~/.zshrc
 
+# if aliases is already installed backup and link fresh
+FILE=~/.aliases
+if test -f "$FILE"; then
+  mv ~/.aliases ~/.aliases.bak
+fi
+ln -s ~/dotfiles/.aliases ~/.aliases
+
 # if zshrc is already installed backup and link fresh
 FILE=~/.inputrc
 if test -f "$FILE"; then
