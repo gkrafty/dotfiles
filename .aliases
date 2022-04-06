@@ -1,0 +1,37 @@
+# directory aliases
+alias la='ls -A'
+alias l='ls -CF'
+alias ll='ls -lah'
+
+# terraform aliases
+alias tfaa='terraform apply --auto-approve'
+alias tfad='terraform apply -destroy --auto-approve'
+
+# certificate handling aliases
+alias showcert='openssl x509 -text -in #1'
+
+# git aliases
+alias gs='git status'
+alias gc='git commit'
+alias gp='git pull --rebase'
+alias gcam='git commit -am'
+alias gl='git log --graph --pretty=format:"%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset" --abbrev-commit'
+
+# better commands
+#add ASN information for tracerouting
+alias tracert='tracerout -A whois.radb.net'
+
+#ping commands for the impatient
+alias ping='ping -c 3 -t 1'
+alias pingc='ping'
+
+#continuously monitor top five processes that are running
+alias watch5='while :; do clear; ps aux -c | head -6; sleep 1; done'
+alias top5='ps aux -c | head -6'
+
+#avoid having to open GUI for enable/disable wifi
+alias wifioff='networksetup -setairportpower en0 off'
+alias wifion='networksetup -setairportpower en0 on'
+
+#flush DNS cache
+alias flushDNS='sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder'
