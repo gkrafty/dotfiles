@@ -49,21 +49,6 @@ else
     echo "Unknown architecture: ${arch_name}"
 fi
 
-# zsh aliases
-alias ll='ls -lah'
-alias watch5='while :; do clear; ps aux -c | head -6; sleep 1; done'
-alias top5='ps aux -c | head -6'
-alias wifioff='networksetup -setairportpower en0 off'
-alias wifion='networksetup -setairportpower en0 on'
-
-# Git aliases.
-alias gs='git status'
-alias gc='git commit'
-alias gp='git pull --rebase'
-alias gcam='git commit -am'
-alias gl='git log --graph --pretty=format:"%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset" --abbrev-commit'
-
-
 # Tell homebrew to not autoupdate every single time I run it (just once a week).
 export HOMEBREW_AUTO_UPDATE_SECS=604800
 
