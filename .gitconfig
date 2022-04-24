@@ -15,8 +15,6 @@
   diff = auto
   interactive = auto
   status = auto
-[init]
-  defaultBranch = main
 [web]
   browser = google-chrome
 [credential]
@@ -59,7 +57,7 @@
   st = status                              # status
   stat = status                            # status
 [pull]
-  rebase = truea
+  rebase = true
 [commit]
   # gpgsign = true
 [branch]
