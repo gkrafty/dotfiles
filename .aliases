@@ -22,8 +22,8 @@ alias gl='git log --graph --pretty=format:"%Cred%h%Creset -%C(yellow)%d%Creset %
 alias tracert='tracerout -A whois.radb.net'
 
 #ping commands for the impatient
-alias ping='ping -c 3 -t 1'
-alias pingc='ping'
+#alias ping='ping -c 3 -t 1'
+#alias pingc='ping'
 
 #continuously monitor top five processes that are running
 alias watch5='while :; do clear; ps aux -c | head -6; sleep 1; done'
