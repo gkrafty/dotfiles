@@ -37,4 +37,4 @@ alias wifion='networksetup -setairportpower en0 on'
 alias flushDNS='sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder'
 
 #lsusb equivalent from linux
-alias lsusb='ioreg -p IOUSB -l | grep "+-o"'
+alias lsusb='ioreg -p IOUSB -l -b | grep "+-o"'
