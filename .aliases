@@ -38,3 +38,6 @@ alias flushDNS='sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder'
 
 #lsusb equivalent from linux
 alias lsusb='ioreg -p IOUSB -l -b | grep "+-o"'
+
+#homebrew updates
+alias brewme='brew update && brew upgrade'
