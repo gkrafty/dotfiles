@@ -32,6 +32,7 @@ alias top5='ps aux -c | head -6'
 #avoid having to open GUI for enable/disable wifi
 alias wifioff='networksetup -setairportpower en0 off'
 alias wifion='networksetup -setairportpower en0 on'
+alias wifistat="networksetup -getairportpower $(system_profiler SPAirPortDataType | awk -F: '/Interfaces:/{getline; print $1;}')"
 
 #flush DNS cache
 alias flushDNS='sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder'
