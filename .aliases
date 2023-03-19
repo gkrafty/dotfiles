@@ -30,9 +30,13 @@ alias watch5='while :; do clear; ps aux -c | head -6; sleep 1; done'
 alias top5='ps aux -c | head -6'
 
 #avoid having to open GUI for enable/disable wifi
-alias wifioff='networksetup -setairportpower en0 off'
-alias wifion='networksetup -setairportpower en0 on'
-alias wifistat="networksetup -getairportpower $(system_profiler SPAirPortDataType | awk -F: '/Interfaces:/{getline; print $1;}')"
+alias wifi_off='networksetup -setairportpower en0 off'
+alias wifi_on='networksetup -setairportpower en0 on'
+alias wifi_stat="networksetup -getairportpower $(system_profiler SPAirPortDataType | awk -F: '/Interfaces:/{getline; print $1;}') && networksetup -getinfo Wi-Fi"
+alias net_off='networksetup -setnetworkserviceenabled "Thunderbolt Ethernet Slot 0 off"'
+alias net_on='networksetup -setnetworkserviceenabled "Thunderbolt Ethernet Slot 0 on"'
+alias net_stat='networksetup -getnetworkserviceenabled "Thunderbolt Ethernet Slot 0" && networksetup -getinfo "Thunderbolt Ethernet Slot 0"'
+alias net_stats='echo "##### Wifi Status #####" && wifi_stat && echo " " && echo "##### Wired Status #####" && net_stat'
 
 #flush DNS cache
 alias flushDNS='sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder'
