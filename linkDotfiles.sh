@@ -48,3 +48,7 @@ if test -f "$FILE"; then
   mv ~/.gitignore ~/.gitignore.bak
 fi
 ln -s ~/dotfiles/.gitignore ~/.gitignore
+
+# link .motd directory exists
+ln -s ~/dotfiles/.motd ~/.motd
+
