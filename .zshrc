@@ -45,6 +45,7 @@ if [ "${arch_name}" = "x86_64" ]; then
     share_path="/usr/local/share"
 elif [ "${arch_name}" = "arm64" ]; then
     share_path="/opt/homebrew/share"
+elif [ "${arch_name}" = "aarch64" ]; then
 else
     echo "Unknown architecture: ${arch_name}"
 fi
