@@ -39,6 +39,9 @@ alias net_on='networksetup -setnetworkserviceenabled "Thunderbolt Ethernet Slot 
 alias net_stat='networksetup -getnetworkserviceenabled "Thunderbolt Ethernet Slot 0" && networksetup -getinfo "Thunderbolt Ethernet Slot 0"'
 alias net_stats='echo "##### Wifi Status #####" && wifi_stat && echo " " && echo "##### Wired Status #####" && net_stat'
 
+#ip discovery
+alias myip='curl wtfismyip.com/json'
+
 #flush DNS cache
 alias flushDNS='sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder'
 
