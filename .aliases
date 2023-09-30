@@ -50,3 +50,9 @@ alias lsusb='ioreg -p IOUSB -l -b | grep "+-o"'
 
 #homebrew updates
 alias brewme='brew update && brew upgrade'
+
+#edit motd
+alias vimotd='cd ~/.motd/ && vi motd-msg'
+
+#edit espanso matches
+alias viespanso='code ~/Library/Application\ Support/espanso'
