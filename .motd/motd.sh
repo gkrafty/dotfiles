@@ -15,5 +15,5 @@ echo
 #echo
 #export MOTD_CMD=(sed -n $((1+$RANDOM%`wc -l ~/.motd/motd-msg | cut -f 7 -d ' '`))p ~/.motd/motd-msg)
 #echo "$($MOTD_CMD)"
-sed -n $((1+$RANDOM%`wc -l ~/.motd/motd-msg | cut -f 6 -d ' '`))p ~/.motd/motd-msg
+sed -n $((1+$RANDOM%`wc -l < ~/.motd/motd-msg`))p ~/.motd/motd-msg
 #echo
